@@ -30,6 +30,6 @@ license = "Apache-2.0"
 
 [dependencies]
 # knx_rs = { path="../knx_rs" }
-knx_rs = "0.0.2"
+knx_rs = "0.0.3"
 
 nom = "4.0.0"
