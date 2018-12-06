@@ -17,8 +17,6 @@
 #![crate_name = "knx_ets_rs"]
 #![crate_type = "lib"]
 
-extern crate knx_rs;
-
 #[macro_use]
 extern crate nom;
 

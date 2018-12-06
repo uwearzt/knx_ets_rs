@@ -16,7 +16,8 @@
 
 [package]
 name = "knx_ets_rs"
-version = "0.0.2"
+version = "0.0.4"
+edition = "2018"
 authors = ["Uwe Arzt <mail@uwe-arzt.de>"]
 
 description = "KNX ETS Library"
@@ -30,6 +31,6 @@ license = "Apache-2.0"
 
 [dependencies]
 # knx_rs = { path="../knx_rs" }
-knx_rs = "0.0.3"
+knx_rs = "0.0.4"
 
-nom = "4.0.0"
+nom = "4.1.1"
