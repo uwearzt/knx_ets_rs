@@ -1,17 +1,6 @@
 // ------------------------------------------------------------------------------
-// Copyright 2018 Uwe Arzt, mail@uwe-arzt.de
-//
-// Licensed under the Apache License, Version 2.0 (the "License");
-// you may not use this file except in compliance with the License.
-// You may obtain a copy of the License at
-//
-//     http://www.apache.org/licenses/LICENSE-2.0
-//
-// Unless required by applicable law or agreed to in writing, software
-// distributed under the License is distributed on an "AS IS" BASIS,
-// WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-// See the License for the specific language governing permissions and
-// limitations under the License.
+// Copyright 2019 Uwe Arzt, mail@uwe-arzt.de
+// SPDX-License-Identifier: Apache-2.0
 // ------------------------------------------------------------------------------
 
 use knx_rs::address::Address;
@@ -81,15 +70,15 @@ impl Ets {
         println!("project: {}", self.project);
         println!("-----------------------------");
         for (maingroup, ref maingroup_string) in self.maingroup_name.iter() {
-            println!("{}:\t{}", maingroup, maingroup_string); 
+            println!("{}:\t{}", maingroup, maingroup_string);
         }
         println!("-----------------------------");
         for (&(maingroup, middlegroup), ref middlegroup_string) in self.middlegroup_name.iter() {
-            println!("{}/{}:\t{}", maingroup, middlegroup, middlegroup_string); 
+            println!("{}/{}:\t{}", maingroup, middlegroup, middlegroup_string);
         }
         println!("-----------------------------");
         for (address, ref address_string) in self.address_name.iter() {
-            println!("{}:\t{}", address, address_string); 
+            println!("{}:\t{}", address, address_string);
         }
         println!("-----------------------------");
     }
