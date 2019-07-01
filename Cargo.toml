@@ -22,4 +22,4 @@ license = "Apache-2.0"
 # knx_rs = { path="../knx_rs" }
 knx_rs = "0.0.5"
 
-nom = "4.2.0"
+nom = "5.0.0"
