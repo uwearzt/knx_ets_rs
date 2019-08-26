@@ -87,11 +87,16 @@ impl Ets {
 // ------------------------------------------------------------------------------
 named!(parse_line<&str, (&str, &str, &str, &str, &str)>,
     do_parse!(
-        main: take_until_and_consume!(".") >>
-        middle: take_until_and_consume!(".") >>
-        address: take_until_and_consume!("\t") >>
-        name: take_until_and_consume!("\t") >>
-        eis: take_until_and_consume!("\t") >>
+        main: take_until!(".") >>
+        tag!(".") >>
+        middle: take_until!(".") >>
+        tag!(".") >>
+        address: take_until!("\t") >>
+        tag!("\t") >>
+        name: take_until!("\t") >>
+        tag!("\t") >>
+        eis: take_until!("\t") >>
+        tag!("\t") >>
         (main, middle, address, name, eis)
     )
 );
